@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./plugins/jquery.js"></script>
+</head>
+
+<body>
+    Hello Danish
+</body>
+
+<script>
+    $(document).ready(function () {
+        console.log('hi');
+
+        $.ajax({
+            method: 'GET',
+            url: 'http://localhost:3000/posts'
+        }).then(function (response) {
+            console.log(response)
+        })
+    })
+</script>
+
+</html>
