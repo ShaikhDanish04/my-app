@@ -1,7 +1,6 @@
 let sqlite = require('sqlite3');
 let path = require('path');
-// let db = new sqlite.Database(path.join(__dirname + '../../database.db'));
-var db = new sqlite.Database('./database.sqlite3');
+var db = new sqlite.Database('./server/database.sqlite3');
 
 module.exports.getPosts = function () {
     return new Promise(function (resolve, reject) {
