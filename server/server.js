@@ -3,7 +3,7 @@ let app = express();
 let posts = require('./models/post');
 
 
-app.get('/', function (req, res) {
+app.get('/posts', function (req, res) {
     posts.getPosts().then(function (response) {
         // console.log(response)
         res.json(response)
